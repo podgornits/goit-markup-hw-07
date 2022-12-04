@@ -777,4 +777,104 @@ body {
   --card-border: #eeee;
   --header-border: #ececec;
   --icon-color: #afb1b8;
+}
+
+.nav-menu {
+  margin-left: 93px;
+}
+
+.nav-menu__item {
+  margin-right: 50px;
+}
+
+.nav-menu__item:last-child {
+  margin-right: 0;
+}
+
+.nav-menu__link {
+  display: block;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  color: var(--basic-text-color);
+  text-decoration: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav-menu__link:hover, .nav-menu__link:focus {
+  color: var(--accent-text-color);
+}
+
+.nav-menu__link--current {
+  position: relative;
+}
+.nav-menu__link--current::before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: var(--accent-text-color);
+}
+.nav-menu__link .nav-menu__link--current {
+  color: var(--accent-text-color);
+}
+
+.nav-menu__link.current {
+  color: var(--accent-text-color);
+}
+
+.contacts-list {
+  margin-left: auto;
+}
+
+.contacts-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 12px;
+}
+
+.contacts-list__icon {
+  width: 16px;
+  margin-right: 10px;
+  fill: currentColor;
+}
+.contacts-list__icon:hover, .contacts-list__icon:focus {
+  fill: var(--accent-text-color);
+}
+
+.contacts-list {
+  display: flex;
+}
+
+.contacts-list__item {
+  margin-right: 50px;
+}
+.contacts-list__item:last-child {
+  margin-right: 0;
+}
+
+.contacts-list__link {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  text-decoration: none;
+  align-items: center;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts-list__link:hover, .contacts-list__link:focus {
+  color: var(--accent-text-color);
 }/*# sourceMappingURL=main.css.map */
