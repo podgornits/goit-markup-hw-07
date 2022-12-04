@@ -8,13 +8,17 @@
     text-transform: uppercase;
     color: var(--basic-text-color);
   }
-  .benefits__item,
-  .section-team .item {
-    flex-basis: calc((100% - 90px) / 4);
+  
+  .benefits__item{
+    align-items: center;
+    justify-content: center;
+
   }
   
   .benefits__icon {
     display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 4px;
     background-color: var(--bcg-button-color);
     height: 120px;
@@ -23,9 +27,10 @@
     margin-bottom: 30px;
   }
   .benefits {
+    width: 1200px;
     display: flex;
     gap: 30px;
-    
+    justify-content: center;
   }
   .benefits__text {
     font-size: 14px;

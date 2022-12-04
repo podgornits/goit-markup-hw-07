@@ -1,4 +1,6 @@
-
+.section-team .item {
+  flex-basis: calc((100% - 90px) / 4);
+}
 .team-name {
     margin-top: 0;
     margin-bottom: 10px;
